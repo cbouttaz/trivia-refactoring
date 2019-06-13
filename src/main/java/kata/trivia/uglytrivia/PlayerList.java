@@ -1,4 +1,4 @@
-package com.adaptionsoft.games.uglytrivia;
+package kata.trivia.uglytrivia;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,9 +1,6 @@
-package com.adaptionsoft.games.uglytrivia;
+package kata.trivia.uglytrivia;
 
 import java.io.PrintStream;
-import java.util.List;
-
-import static java.util.Arrays.asList;
 
 public class Game {
 

@@ -1,7 +1,7 @@
 
-package com.adaptionsoft.games.trivia.runner;
+package kata.trivia.trivia.runner;
 
-import com.adaptionsoft.games.uglytrivia.*;
+import kata.trivia.uglytrivia.*;
 
 import java.util.List;
 import java.util.Random;

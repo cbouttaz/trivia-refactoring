@@ -1,6 +1,6 @@
-package com.adaptionsoft.games.trivia;
+package kata.trivia.trivia;
 
-import com.adaptionsoft.games.uglytrivia.*;
+import kata.trivia.uglytrivia.*;
 import com.github.approval.Approvals;
 import org.junit.Test;
 

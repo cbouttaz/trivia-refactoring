@@ -1,4 +1,4 @@
-package com.adaptionsoft.games.uglytrivia;
+package kata.trivia.uglytrivia;
 
 class Player {
     private final String name;
