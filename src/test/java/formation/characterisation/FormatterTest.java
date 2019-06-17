@@ -6,9 +6,8 @@ import org.junit.Test;
 
 public class FormatterTest {
     @Test
-    public void x() {
+    public void xxx() {
+        Assert.assertEquals("???", Formatter.formatText(""));
     }
-    @Test
-    public void shouldCleanHtmlTags() {
-    }
+
 }

@@ -18,5 +18,4 @@ public class Formatter {
         }
         return new String(result);
     }
-
 }

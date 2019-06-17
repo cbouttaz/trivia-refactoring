@@ -9,18 +9,10 @@ import static org.junit.Assert.*;
  * Mock: BlackBox: shouldNotifyBlackBoxWhenAlarmIsOn
  */
 public class AlarmTest {
-    private boolean isCalled = false;
-    private Sensor koSensor;
 
     @Test
     public void shouldRaiseAlarmWhenOverThreshold() {
-        koSensor = new Sensor() {
-            @Override
-            public double popNextPressurePsiValue() {
-                return 30;
-            }
-        };
-        Alarm alarm = new Alarm(koSensor, new BlackBox());
+        Alarm alarm = new Alarm();
 
         alarm.check();
 
@@ -28,24 +20,11 @@ public class AlarmTest {
     }
 
     @Test
-    public void shouldCallBlackBoxWhenOverThreshold() {
-        koSensor = new Sensor() {
-            @Override
-            public double popNextPressurePsiValue() {
-                return 15;
-            }
-        };
-        Alarm alarm = new Alarm(koSensor, new BlackBox(){
-            @Override
-            public void trace(String pressureProblem) {
-                isCalled = true;
-                super.trace(pressureProblem);
-            }
-        });
+    public void shouldRegisterInBlackBoxWhenOverThreshold() {
+        Alarm alarm = new Alarm();
 
         alarm.check();
 
-        assertEquals(isCalled, false);
+        assertEquals(false, true);
     }
-
 }
