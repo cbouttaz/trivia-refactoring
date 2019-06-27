@@ -1,3 +1,5 @@
+package kata.tennis;
+
 import junit.framework.TestCase;
 import kata.tennis.TennisGame;
 
